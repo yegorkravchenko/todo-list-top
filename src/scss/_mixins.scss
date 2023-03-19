@@ -1,0 +1,11 @@
+@mixin colorize-button($bg-color, $border-color, $text-color) {
+  background-color: $bg-color;
+  border-color: $border-color;
+  color: $text-color;
+
+  &:hover {
+    background-color: $text-color;
+    border-color: $border-color;
+    color: $bg-color;
+  }
+}
