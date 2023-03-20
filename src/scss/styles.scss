@@ -145,6 +145,14 @@ body {
     font-size: 1.25rem;
   }
 
+  &__label {
+    border: 1px solid $slate-300;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    padding: 0.2rem 0.74rem;
+  }
+
   &__date {
     color: $slate-400;
   }
