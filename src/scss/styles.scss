@@ -45,6 +45,62 @@ body {
   }
 }
 
+.input,
+.label {
+  display: block;
+}
+
+.label {
+  color: $slate-900;
+  font-size: 1rem;
+  margin: 0 0 10px 0.5rem;
+}
+
+.input {
+  border: 1px solid $slate-400;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: hsla(222, 47%, 11%, 0.85);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: $slate-50;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    background-color: $slate-50;
+    border-radius: 7px;
+    width: 90%;
+    max-width: 350px;
+    padding: 1rem 1.5rem;
+  }
+
+  &__controls {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+  }
+}
+
 .header {
   grid-area: header;
 
